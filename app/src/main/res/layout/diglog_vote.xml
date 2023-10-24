@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg_color_white_16">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/word109KInfoAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:textColor="@color/black"
+            android:hint="Feedback App DũngSobin"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/read109KInfo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/ic_audio" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/titleVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tiêu đề"
+        android:textSize="22dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/nameVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên bạn"
+        android:textSize="20dp" />
+
+    <RatingBar
+        android:id="@+id/rateVote"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Nội dung"
+        android:padding="5dp"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contentVote"
+            android:layout_width="match_parent"
+            android:editable="false"
+
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textImeMultiLine|textMultiLine"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btGopY"
+            android:background="@drawable/bg_button_primay_color"
+            android:text="Góp ý"
+            android:layout_width="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btVoteCancel"
+            android:background="@drawable/bg_button_primay_color"
+            android:text="Hủy bỏ"
+            android:layout_marginLeft="80dp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

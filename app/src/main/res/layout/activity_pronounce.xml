@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content"
+    tools:context=".app.PronounceActivity">
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="Luyện nói tiếng anh cô Vân Anh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hãy phát âm từ sau:"
+            android:layout_height="wrap_content"
+            />
+        <ImageButton
+            android:id="@+id/speakPronounce"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+
+    <EditText
+        android:id="@+id/systemPronounce"
+        android:layout_width="match_parent"
+        android:text="Hello My Teacher"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        />
+    <ImageView
+        android:id="@+id/btnMicPronouce"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_micro" />
+    <TextView
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:text="Bạn vừa nói:"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/userPronounce"
+        android:layout_width="match_parent"
+        android:text="Hello Mi Teacher"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/rate"
+        android:text="Độ chính xác: Khá tốt"
+        android:textSize="25dp"
+        android:visibility="gone"
+        android:textColor="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="60dp"
+            android:id="@+id/btNextWord"
+            android:background="@drawable/bg_button_primay_color"
+            android:layout_width="100dp"
+            android:text="Từ tiếp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btnTextPronounce"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_button_primay_color"
+            android:text="Quay lại" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

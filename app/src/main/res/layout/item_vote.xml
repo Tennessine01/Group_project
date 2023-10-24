@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+
+    android:backgroundTint="@color/btn_login_bg"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/voteTitle"
+                android:textStyle="bold"
+                android:text="The best app 100đ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/btn_login"
+                android:layout_weight="1"
+                android:id="@+id/voteName"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="100dp"
+                android:text="Đỗ Đăng Dũng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <RatingBar
+            android:layout_weight="1"
+            android:id="@+id/voteRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/colorAccent"
+            android:rating="3.5"
+            android:scaleX="0.5"
+            android:isIndicator="true"
+            android:scaleY="0.5"
+            android:secondaryProgressTint="@color/black" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:lines="6"
+            android:text="This English learning app is excellent! It provides a wide range of engaging activities and interactive lessons that cater to different learning styles. The app's user-friendly interface makes it easy to navigate, and the audio recordings are clear and helpful for pronunciation practice. Overall, this app is a fantastic resource for anyone looking to improve their English language skills."
+            android:id="@+id/voteContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
